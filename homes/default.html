@@ -34,7 +34,12 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
     <link href="../assets/css/theme.css" rel="stylesheet" />
     <link href="../assets/css/user.css" rel="stylesheet" />
-
+    <!--for price table-->
+    <style>
+      table {width: 100%;}
+      td {text-align: left; padding = 5px}
+      tr:nth-child(odd) {background-color: #f2f2f2;}
+    </style>
   </head>
 
 
@@ -42,7 +47,7 @@
 
 
     <nav class="fancynavbar fancynavbar-expand-lg" data-zanim-lg='{"from":{"opacity":1,"x":70},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}' data-zanim-xs='{"from":{"opacity":1,"y":-37},"to":{"opacity":1,"y":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}' data-zanim-trigger="scroll" data-exclusive="true">
-      <div class="fancynavbar-togglerbar" data-onscroll-fade-in="data-onscroll-fade-in"><a class="fancynavbar-brand" href="../index.html"><img class="fancynavbar-brand-img" src="../assets/img/logo-sparrow-invert.svg" alt="" width="30" height="30" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll" />
+      <div class="fancynavbar-togglerbar" data-onscroll-fade-in="data-onscroll-fade-in"><a class="fancynavbar-brand" href="../homes/default.html"><img class="fancynavbar-brand-img" src="../assets/img/Revvo_icon.png" alt="" width="30" height="30" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll" />
 
           <!--You can use icon or text logo as well-->
           <!--<span class='fab fa-superpowers fs-3'></span>-->
@@ -55,55 +60,16 @@
             <path id="path-bottom" d="M19.9,46.98c0,0,18.8-18.85,29.95-29.95C68.89-1.92,66,38.78,50,38.78c-8,0-30,0-30,0"></path>
           </svg>
         </div>
-        <div class="fancynavbar-addon" data-zanim-lg='{"from":{"opacity":1,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll"><a class="fancynavbar-addon-item" href="#!"><span class="fab fa-twitter"></span></a><a class="fancynavbar-addon-item" href="#languageModal" data-bs-toggle="modal"><span class="font-sans-serif ls fw-black fs--1 d-block">EN</span></a>
+        <div class="fancynavbar-addon" data-zanim-lg='{"from":{"opacity":1,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll">
+          <a class="fancynavbar-addon-item" href="https://www.facebook.com/revvoacademy/"><span class="fab fa-facebook"></span></a>
+          <a class="fancynavbar-addon-item" href="https://www.instagram.com/revvoacademy/?hl=en"><span class="fab fa-instagram"></span></a>
         </div>
       </div>
       <div class="fancynavbar-collapse">
         <ul class="fancynavbar-nav">
-          <li class="fancynav-item fancy-dropdown"><a class="fancynav-link fancy-dropdown-toggle" href="JavaScript:void(0)"><span class="fancynav-link-content">homes</span></a>
-            <div class="fancy-dropdown-menu">
-              <div class="row pb-4 pt-3">
-                <div class="col-auto"><a class=" false fancy-dropdown-item" href="../homes/default.html"> Default</a><a class=" false fancy-dropdown-item" href="../homes/bicycle.html"> Bicycle</a><a class=" false fancy-dropdown-item" href="../homes/bigcartel.html"> Bigcartel</a><a class=" false fancy-dropdown-item" href="../homes/cafe.html"> Cafe</a><a class=" false fancy-dropdown-item" href="../homes/digital.html"> Digital</a><a class=" false fancy-dropdown-item" href="../homes/ecommerce.html"> Ecommerce</a><a class=" false fancy-dropdown-item" href="../homes/event.html"> Event</a><a class=" false fancy-dropdown-item" href="../homes/interior.html"> Interior</a><a class=" false fancy-dropdown-item" href="../homes/landing.html"> Landing</a><a class=" false fancy-dropdown-item" href="../homes/promotion.html"> Promotion</a><a class=" false fancy-dropdown-item" href="../homes/software.html"> Software</a><a class=" false fancy-dropdown-item" href="../homes/studio.html"> Studio</a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="fancynav-item fancy-dropdown"><a class="fancynav-link fancy-dropdown-toggle" href="JavaScript:void(0)"><span class="fancynav-link-content">pages</span></a>
-            <div class="fancy-dropdown-menu">
-              <div class="row pb-4 pt-3">
-                <div class="col-sm-auto pe-4"><a class=" false fancy-dropdown-item" href="../pages/404.html"> 404</a><a class=" false fancy-dropdown-item" href="../pages/about.html"> About</a><a class=" false fancy-dropdown-item" href="../pages/blog.html"> Blog</a><a class=" false fancy-dropdown-item" href="../pages/blog-single.html"> Blog single</a><a class=" false fancy-dropdown-item" href="../pages/cart.html"> Cart</a><a class=" false fancy-dropdown-item" href="../pages/casestudy.html"> Casestudy</a><a class=" false fancy-dropdown-item" href="../pages/coming-soon.html"> Coming soon</a><a class=" false fancy-dropdown-item" href="../pages/contact.html"> Contact</a><a class=" false fancy-dropdown-item" href="../pages/one-page.html"> One page</a><a class=" false fancy-dropdown-item" href="../pages/portfolio.html"> Portfolio</a>
-                </div>
-                <div class="col-sm-auto pe-4"><a class=" false fancy-dropdown-item" href="../pages/profile.html"> Profile</a><a class=" false fancy-dropdown-item" href="../pages/rtl.html"> RTL</a><a class=" false fancy-dropdown-item" href="../pages/services.html"> Services</a><a class=" false fancy-dropdown-item" href="../pages/shop.html"> Shop</a><a class=" false fancy-dropdown-item" href="../pages/signin.html"> Signin</a><a class=" false fancy-dropdown-item" href="../pages/signup.html"> Signup</a><a class=" false fancy-dropdown-item" href="../pages/product-single.html"> Product single</a><a class=" false fancy-dropdown-item" href="../pages/split-static.html"> Split static</a><a class=" false fancy-dropdown-item" href="../pages/split-youtube.html"> Split youtube</a><a class=" false fancy-dropdown-item" href="../pages/starter.html"> Starter</a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="fancynav-item fancy-dropdown"><a class="fancynav-link fancy-dropdown-toggle" href="JavaScript:void(0)"><span class="fancynav-link-content">components</span></a>
-            <div class="fancy-dropdown-menu">
-              <div class="row pb-2 pt-3">
-                <div class="col-sm-auto mb-3">
-                  <div class="row">
-                    <div class="col-sm-auto pe-4"><a class="fancy-dropdown-item text-white fw-black ls text-uppercase fs--1 mb-1" href="JavaScript:void(0)">Sparrow</a><a class=" false fancy-dropdown-item" href="../components/sparrow/accordion.html"> Accordion</a><a class=" false fancy-dropdown-item" href="../components/sparrow/anchor.html"> Anchor</a><a class=" false fancy-dropdown-item" href="../components/sparrow/backgrounds.html"> Backgrounds</a><a class=" false fancy-dropdown-item" href="../components/sparrow/borders.html"> Borders</a><a class=" false fancy-dropdown-item" href="../components/sparrow/carousel.html"> Carousel</a><a class=" false fancy-dropdown-item" href="../components/sparrow/colors.html"> Colors</a><a class=" false fancy-dropdown-item" href="../components/sparrow/cookie-notice.html"> Cookie notice</a><a class=" false fancy-dropdown-item" href="../components/sparrow/countdown.html"> Countdown</a><a class=" false fancy-dropdown-item" href="../components/sparrow/countup.html"> Countup</a><a class=" false fancy-dropdown-item" href="../components/sparrow/fancynav.html"> Fancynav</a><a class=" false fancy-dropdown-item" href="../components/sparrow/filter.html"> Filter</a>
-                    </div>
-                    <div class="col-sm-auto pe-4"><a class=" false fancy-dropdown-item" href="../components/sparrow/googlemap.html"> Googlemap</a><a class=" false fancy-dropdown-item" href="../components/sparrow/icons.html"> Icons</a><a class=" false fancy-dropdown-item" href="../components/sparrow/inline-player.html"> Inline player</a><a class=" false fancy-dropdown-item" href="../components/sparrow/lightbox.html"> Lightbox</a><a class=" false fancy-dropdown-item" href="../components/sparrow/masonry.html"> Masonry</a><a class=" false fancy-dropdown-item" href="../components/sparrow/parallax.html"> Parallax</a><a class=" false fancy-dropdown-item" href="../components/sparrow/progressbar.html"> Progressbar</a><a class=" false fancy-dropdown-item" href="../components/sparrow/spacing.html"> Spacing</a><a class=" false fancy-dropdown-item" href="../components/sparrow/typed-text.html"> Typed text</a><a class=" false fancy-dropdown-item" href="../components/sparrow/typography.html"> Typography</a><a class=" false fancy-dropdown-item" href="../components/sparrow/zanimation.html"> Zanimation</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-auto pe-3 mb-3"><a class="fancy-dropdown-item text-white fw-black ls text-uppercase fs--1 mb-1" href="JavaScript:void(0)">Bootstrap</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/badges.html"> Badges</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/buttons.html"> Buttons</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/cards.html"> Cards</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/forms.html"> Forms</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/modals.html"> Modals</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/navbar.html"> Navbar</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/scrollspy.html"> Scrollspy</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/sizing.html"> Sizing</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/tables.html"> Tables</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/tabs.html"> Tabs</a><a class=" false fancy-dropdown-item" href="../components/bootstrap/tooltips.html"> Tooltips</a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="fancynav-item fancy-dropdown"><a class="fancynav-link fancy-dropdown-toggle" href="JavaScript:void(0)"><span class="fancynav-link-content">documentation</span></a>
-            <div class="fancy-dropdown-menu">
-              <div class="row pb-4 pt-3">
-                <div class="col-auto"><a class=" false fancy-dropdown-item" href="../documentation/getting-started.html"> Getting started</a><a class=" false fancy-dropdown-item" href="../documentation/file-structure.html"> File structure</a><a class=" false fancy-dropdown-item" href="../documentation/customization.html"> Customization</a><a class=" false fancy-dropdown-item" href="../documentation/gulp.html"> Gulp</a><a class=" false fancy-dropdown-item" href="../documentation/rtl.html"> RTL</a><a class=" false fancy-dropdown-item" href="../documentation/plugins.html"> Plugins</a><a class=" false fancy-dropdown-item" href="../documentation/changelog.html"> Changelog</a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="fancynav-item"><a class="fancynav-link" href="../pages/portfolio.html"><span class="fancynav-link-content">portfolio</span></a></li>
-          <li class="fancynav-item"><a class="fancynav-link" href="../pages/contact.html"><span class="fancynav-link-content">contact</span></a></li>
+          <li class="fancynav-item"><a class="fancynav-link" href="../homes/default.html"><span class="fancynav-link-content">Home</span></a></li>
+          <li class="fancynav-item"><a class="fancynav-link" href="../pages/portfolio.html"><span class="fancynav-link-content">Testimonials</span></a></li>
+          <li class="fancynav-item"><a class="fancynav-link" href="../pages/contact.html"><span class="fancynav-link-content">Contact Us</span></a></li>
         </ul>
       </div>
     </nav>
@@ -184,14 +150,6 @@ S
             <div class="col-lg-6 bg-white py-7 py-md-8">
               <div class="row flex-center h-100">
                 <div class="col-lg-10 text-black text-center text-lg-start" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                  <!--
-                  <div class="overflow-hidden">
-                    <h4 class="text-uppercase fw-normal ls text-white bg-dark p-1 rounded d-inline-block" data-zanim-xs='{"delay":0.1}'>renovating &nbsp;together</h4>
-                  </div>
-                  <div class="overflow-hidden">
-                    <h1 class="display-3 fs-5 fs-sm-6" id="sc" data-zanim-xs='{"delay":0.2}'><span class="text-decoration-underline">sparrow</span><br /><span class="fw-light">creative</span></h1>
-                  </div>
-                -->
                   <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/logo/Revvo.PNG" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' style='height: 100%; width: 100%; object-fit: contain'/></div>
                   <div class="overflow-hidden">
                     <p class="text-900 fs-0 mt-3 mt-md-5" data-zanim-xs='{"delay":0.3}'>Colour Up Your Life! <br /> Transform &mdash; Shape Up<br />Healthy &mdash; Happy &mdash; Fit</p>
@@ -233,13 +191,13 @@ S
                   &mdash;	Science-based nutrition <br /> &mdash; Passionate coaches <br /> &mdash; Like-minded community  <br /> &mdash; Fun, laughter and smiles</p>
               </div>
             </div>
-            <div class="col-sm-8 col-lg-4 mt-4 mt-lg-0 px-lg-4"><img class="w-100 rounded" src="../assets/img/revvo-img-4.jpegf" alt="" data-zanim-xs='{"animation":"zoom-out","delay":0.1}' data-zanim-trigger="scroll" /></div>
+            <div class="col-sm-8 col-lg-4 mt-4 mt-lg-0 px-lg-4"><img class="w-100 rounded" src="../assets/img/revvo_website_1.jpg" alt="" data-zanim-xs='{"animation":"zoom-out","delay":0.1}' data-zanim-trigger="scroll" /></div>
             <div class="col-sm-8 col-lg-4 mt-5 mt-lg-0 ps-lg-3 ps-xl-4">
               <div class="overflow-hidden">
                 <h4 class="mb-3" data-zanim-xs='{"delay":0.2}' data-zanim-trigger="scroll">Ready, Get Set, Go!</h4>
               </div>
               <div class="overflow-hidden">
-                <p data-zanim-xs='{"delay":0.3}' data-zanim-trigger="scroll">No matter what starting point of you are at in your motivation level to shape up , be heathier and fitter, so long that you decided to make a change, at Revvo, we are able to get you going, and help you achieve your desired goal in a sustainable manner at a pace you are comfortable with.</p>
+                <p data-zanim-xs='{"delay":0.3}' data-zanim-trigger="scroll">No matter what your starting point is at for your fitness level or your motivation to shape up, or be healthier, so long that you have decided to make a change, we are able to get you going at Revvo. It will be at a pace that you are comfortable with, step by step, you will achieve your desired goal.</p>
               </div>
             </div>
           </div>
@@ -255,13 +213,14 @@ S
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="text-center py-8 py-md-11 overflow-hidden" id="defaultVideo">
+      <!--
+        <section class="text-center py-8 py-md-11 overflow-hidden" id="defaultVideo">
 
         <div class="bg-holder" style="background-image:url(../assets/img/workout-5.jpg);" data-parallax="" data-rellax-percentage="0.5" data-rellax-speed="-3">
-        </div>
+        </div> -->
         <!--/.bg-holder-->
-
-        <div class="container-fluid"><!--<a class="text-white" href="#!" data-bigpicture='{"ytSrc":"kAphgHhlteM"}'>-->
+        
+        <!--<div class="container-fluid"><a class="text-white" href="#!" data-bigpicture='{"ytSrc":"kAphgHhlteM"}'>
           <a class="text-white" href="../assets/video/revvo-video.mp4" target="_blank">
             <class="mx-auto d-block" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 274.19 274.19" data-zanim-svg='{"duration":2,"ease":"CubicBezier"}' data-zanim-svg-trigger="scroll">
               <defs>
@@ -279,7 +238,7 @@ S
                 <path class="play-path" d="M208.31,29.4A129.12,129.12,0,1,1,137.1,8m-1.48,170.53L199.94,137,104.07,79.46v113"></path>
               </g>
             </svg><span class="h4 mt-3 text-white" data-zanim-xs='{"from":{"letter-spacing":"0.2em","opacity":0},"to":{"letter-spacing":0,"opacity":1},"delay":0.8}' data-zanim-trigger="scroll">Watch the Reel</span></a>
-        </div>
+        </div>-->
         <!-- end of .container-->
 
       </section>
@@ -300,7 +259,7 @@ S
             </div>
             <div class="col-lg-5">
               <div class="d-flex" id="bootstrap5" data-zanim-trigger="scroll" data-zanim-timeline="{}">
-                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/bootstrap.svg" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/fitness.PNG" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="flex-1">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>Fitness</h4>
@@ -316,7 +275,7 @@ S
             </div>
             <div class="col-lg-5">
               <div class="d-flex" id="responsiveCSShelperclasses" data-zanim-trigger="scroll" data-zanim-timeline="{}">
-                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/icon-target.svg" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/nutrition.png" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="flex-1">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>Nutrition</h4>
@@ -331,7 +290,7 @@ S
             </div>
             <div class="col-lg-5">
               <div class="d-flex" id="32setsofelements" data-zanim-trigger="scroll" data-zanim-timeline="{}">
-                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/favorites-button.svg" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/community.PNG" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="flex-1">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>Coaches and Community </h4>
@@ -346,7 +305,7 @@ S
             </div>
             <div class="col-lg-5">
               <div class="d-flex" id="butterysmoothanimation" data-zanim-trigger="scroll" data-zanim-timeline="{}">
-                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/icon-line-chart.svg" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/personalization.PNG" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="flex-1">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>Personalization</h4>
@@ -360,7 +319,7 @@ S
             </div>
             <div class="col-lg-5">
               <div class="d-flex" id="modular&amp;amp;multipurpose" data-zanim-trigger="scroll" data-zanim-timeline="{}">
-                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/multi-purpose.svg" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/smile.PNG" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="flex-1">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>Fun &amp; Smiles </h4>
@@ -373,14 +332,14 @@ S
             </div>
             <div class="col-lg-5">
               <div class="d-flex" id="familiarmarkup" data-zanim-trigger="scroll" data-zanim-timeline="{}">
-                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/icon-coding.svg" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden"><img class="me-3 me-sm-4" src="../assets/img/icons/variety.PNG" width="50" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="flex-1">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>Variety of Workouts</h4>
                   </div>
                   <div class="overflow-hidden">
                     <p data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>We offer HIIT, Kickbox HIIT, Jump HIIT, Fitness Dance, Yoga and more.</p>
-                    <a class="btn btn-outline-dark btn-sm mt-3" href="../assets/img/schedule/Schedule Active.jpeg" target="_blank">View Schedule</a>
+                    <a class="btn btn-outline-dark btn-sm mt-3" href="#!" data-bigpicture='{"imgSrc":"../assets/img/schedule/Schedule Active.jpeg"}'>View Schedule</a>
                   </div>
                 </div>
               </div>
@@ -411,7 +370,7 @@ S
           <div class="row">
             <div class="col-12 ps-lg-7">
               <div class="row align-items-end">
-                <div class="col-lg-6 order-lg-2 text-center"><img class="img-fluid" src="../assets/img/illustration/process-01.svg" alt="" width="400" /></div>
+                <!--<div class="col-lg-6 order-lg-2 text-center"><img class="img-fluid" src="../assets/img/illustration/process-01.svg" alt="" width="400" /></div>-->
                 <div class="col-lg-6 border-lg-start border-lg-bottom pb-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
                   <div class="process-item ms-6 ms-sm-8 ms-lg-6"><span class="process-item-number">A</span>
                     <h3>Getting to Know You</h3>
@@ -420,7 +379,7 @@ S
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-6 border-lg-end border-lg-bottom text-center py-lg-8"><img class="img-fluid" src="../assets/img/illustration/process-02.svg" alt="" width="400" /></div>
+                <!--<div class="col-lg-6 border-lg-end border-lg-bottom text-center py-lg-8"><img class="img-fluid" src="../assets/img/illustration/process-02.svg" alt="" width="400" /></div>-->
                 <div class="col-lg-6 mt-4 mb-8 my-lg-8">
                   <div class="process-item ms-6 ms-sm-8 ms-lg-6"><span class="process-item-number">B</span>
                     <h3>Intervention</h3>
@@ -436,14 +395,14 @@ S
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-6 order-lg-2 text-center align-self-center"><img class="img-fluid" src="../assets/img/illustration/process-03.svg" alt="" width="400" /></div>
+                <!--<div class="col-lg-6 order-lg-2 text-center align-self-center"><img class="img-fluid" src="../assets/img/illustration/process-03.svg" alt="" width="400" /></div>-->
                 <div class="col-lg-6 border-lg-start border-lg-bottom py-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
                   <div class="process-item ms-6 ms-sm-8 ms-lg-6"><span class="process-item-number">C</span>
                     <h3>Implementation, Tracking &amp; Review</h3>
                     <p>For programmes that involve Personal Trainer or Coach Support, the assigned PT or Coach will work with you to develop and implement a detailed plan on how you want to be 
                       supported and coached for results. This plan will cover:
                       <ul>
-                        <li>Which workout sessions you are attending</li>
+                        <li>Workout sessions you are attending</li>
                         <li>Scheduled body composition analysis evaluation</li>
                         <li>Nutrition and meal prep support</li>
                         <li>Meal plans</li>
@@ -481,7 +440,7 @@ S
 
         <div class="container">
           <div class="position-absolute overflow-hidden all-0">
-            <div class="bg-holder overlay rounded" style="background-image:url(../assets/img/headers/header-16.jpg);" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"zoom-out","delay":0}'>
+            <div class="bg-holder overlay rounded" style="background-image:url(../assets/img/banner\ 2\ -\ kettlebell.jpg);" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"zoom-out","delay":0}'>
             </div>
             <!--/.bg-holder-->
 
@@ -489,7 +448,7 @@ S
           <div class="row justify-content-center text-center py-7">
             <div class="col-lg-9 position-relative">
               <h3 class="fs-2 fs-sm-3 text-white">Our Results</h3>
-              <p class="lead fst-italic text-400 px-lg-7">See what our clients have to say about us</p><a class="btn btn-outline-light mt-4 btn-sm border-2" href="../pages/portfolio.html" target="_blank">Portfolio</a>
+              <p class="lead fst-italic text-400 px-lg-7">See what our clients have to say about us</p><a class="btn btn-outline-light mt-4 btn-sm border-2" href="../pages/portfolio.html" target="_blank">Testimonials</a>
             </div>
           </div>
         </div>
@@ -499,96 +458,7 @@ S
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-       
-      <section class="text-center" id="defaultProgressbar">
-        <!--
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <h2 class="fs-3 fs-sm-4 text-decoration-underline mb-3">performance?</h2>
-              <p class="text-500 fst-italic">Be surprised seeing the final outcome of your creation with sparrow and want more, no matter the task.</p>
-            </div>
-          </div>
-          <div class="row align-items-center mt-6">
-            <div class="col-md-6 position-relative">
-              <div class="progress-circle mb-4" data-progress-circle='{"progress":88,"subText":"<span class=&#39;text-700 pt-2&#39;>More Power behind<br/>every pixel</span>"}'> </div>
-              <h4>Record Breaking in History</h4>
-              <p class="px-4">Creating with sparrow is an easier, faster way to get things done. And it makes development even more effortless.</p>
-            </div>
-            <div class="col-md-6 ps-md-7 text-start mt-8 mt-md-0">
-              <div class="progress-line me-4" data-progress-line='{"progress":93,"subText":"Google Page Speed"}'></div>
-              <div class="progress-line me-4 mt-4" data-progress-line='{"progress":96,"subText":"Pingdom Page Speed"}'></div>
-              <div class="progress-line me-4 mt-4" data-progress-line='{"progress":90,"subText":"Sparrow Performance Matrix"}'></div>
-              <p class="mt-4">Combined with the power of bootstrap, sparrow can provide helpful elements to make web design easier and make your website load faster than ever.</p><a class="btn btn-outline-dark px-5 mt-5" href="#!">see comparison</a>
-            </div>
-          </div>
-        </div> 
-        -->
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <!--
-      <section class="overflow-hidden py-0" id="defaultCta2">
-        
-        <div class="container">
-          <div class="position-absolute overflow-hidden all-0">
-            <div class="bg-holder overlay overlay-2 rounded" style="background-image:url(../assets/img/headers/header-47.jpg);" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"zoom-out","delay":0}'>
-            </div>
-        -->
-            <!--/.bg-holder-->
-          <!---
-          </div>
-          <div class="row flex-center text-center py-8">
-            <div class="col-lg position-relative">
-              <h1 class="mb-0 text-white">2 million</h1>
-              <h6 class="text-300 fs-0">happy customers &amp; counting</h6><a class="btn btn-outline-light btn-sm mt-4 border-2" href="#!">read user stories</a>
-            </div>
-            <div class="col-lg-7 px-lg-8 mt-6 mt-lg-0 position-relative">
-              <div class="swiper-container theme-slider position-static" data-swiper='{"autoplay":{"delay":3000},"loop":true,"effect":"slide"}'>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <h4 class="font-base fw-light text-white fst-italic fs-1 fs-sm-2 mb-4">"Sparrow ensures that I sleep like a little baby every single night"</h4>
-                    <h6 class="fs-0 mb-0 text-white fw-black">Mane Dumas</h6>
-                    <h6 class="fs-0 mb-0 fw-normal text-400">web designer</h6>
-                  </div>
-                  <div class="swiper-slide">
-                    <h4 class="font-base fw-light text-white fst-italic fs-1 fs-sm-2 mb-4">"With no writing of any CSS code &mdash; customize almost everything"</h4>
-                    <h6 class="fs-0 mb-0 text-white fw-black">Jane Dumas</h6>
-                    <h6 class="fs-0 mb-0 fw-normal text-400">developer</h6>
-                  </div>
-                </div>
-                <div class="swiper-nav">
-                  <div class="swiper-button-next me-md-5"></div>
-                  <div class="swiper-button-prev ms-md-5"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        -->
-        <!-- end of .container-->
-
-      </section>
-    
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
+      
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section id="defaultPricingPlan">
@@ -598,71 +468,48 @@ S
             <div class="col-lg-6 mb-7 text-center">
               <h2 class="fs-3 fs-sm-4 text-decoration-underline mb-3">Fitness Packages</h2>
               <p class="text-500 fst-italic">Choose from the package plans that suits you best.</p>
-              <p class="text-500 fst-italic">Insert table of Price list as img?</p>
+              <table style="width:110%;">
+                <tr>
+                  <td ><h4>Fit 1 | 1 credit</h4></td>
+                  <td style="text-align: right;"><h4>$35</h4></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;"><h4>Fit 4 | 4 credits | 1 month validity</h4></td>
+                  <td style="text-align: right;"><h4>$120</h4></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;"><h4>Fit 10 | 10 credits | 2 months validity</h4></td>
+                  <td style="text-align: right;"><h4>$248</h4></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;"><h4>Fit 20 | 20 credits | 4 months validity</h4></td>
+                  <td style="text-align: right;"><h4>$448</h4></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;"><h4>*Fit Unlimited 1 | 30 credits | 1 month validity</h4></td>
+                  <td style="text-align: right;"><h4>$388</h4></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;"><h4>*Fit Unlimited 2 | 60 credits | 2 months validity</h4></td>
+                  <td style="text-align: right;"><h4>$628</h4></td>
+                </tr>
+
+              </table>
+              </br>
+              
               <h4>Personal Trainer/Coach – Price Upon enquiry</h4>
-            </div>
-          </div>
-          <!--
-          <div class="row justify-content-center justify-content-md-start text-center text-md-start">
-            <div class="col-10 col-md-6 col-lg-4 pe-md-4 pe-lg-6" data-zanim-timeline="{}" data-zanim-trigger="scroll"><img class="mb-3" src="../assets/img/icons/package1.svg" alt="" width="120" height="120" />
-              <div class="overflow-hidden">
-                <h2 data-zanim-xs='{"delay":0.1}'>personal</h2>
-              </div>
-              <div class="overflow-hidden">
-                <h4 class="font-base fw-light fst-italic mb-0 text-600" data-zanim-xs='{"delay":0.2}'>forever</h4>
-              </div>
-              <div class="overflow-hidden">
-                <h4 class="mb-4" data-zanim-xs='{"delay":0.3}'>free</h4>
-              </div>
-              <div class="overflow-hidden">
-                <p data-zanim-xs='{"delay":0.4}'>Create beautiful, professional campaigns for free—no design or coding experience necessary. It's so easy, you can start sending today.</p>
-              </div>
-              <div class="overflow-hidden">
-                <div data-zanim-xs='{"delay":0.5}'><a class="btn btn-link ps-md-0 text-black fw-black" href="#!">join now<span class="d-inline-block">&xrarr;</span></a></div>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 col-lg-4 px-lg-4 mt-6 mt-md-0" data-zanim-timeline="{}" data-zanim-trigger="scroll"><img class="mb-3" src="../assets/img/icons/package2.svg" alt="" width="120" height="120" />
-              <div class="overflow-hidden">
-                <h2 data-zanim-xs='{"delay":0.1}'>business</h2>
-              </div>
-              <div class="overflow-hidden">
-                <h4 class="font-base fw-light fst-italic mb-0 text-600" data-zanim-xs='{"delay":0.2}'>starting at</h4>
-              </div>
-              <div class="overflow-hidden">
-                <h4 class="mb-4 d-flex align-items-center" data-zanim-xs='{"delay":0.3}'><span>$10 per month</span><span class="border border-danger text-danger fw-semi-bold px-1 fs--1 rounded ms-2">Save 50%</span></h4>
-              </div>
-              <div class="overflow-hidden">
-                <ul class="style-check ps-0" data-zanim-xs='{"delay":0.4}'>
-                  <li class="d-inline-block d-md-block">Level up with automation</li>
-                  <li class="d-inline-block d-md-block">Workflows, e-commerce-focused</li>
-                  <li class="d-inline-block d-md-block">Features, and more tools that</li>
-                  <li class="d-inline-block d-md-block">Refine your marketing strategy</li>
+              <p><h5>Standard fitness session pass = 1 credit</h5></p>
+              <p><h5>*Fit Unlimited credits cannot be used for special fitness sessions or events. </h5></p>
+              <div style="text-align:left; color:black;">
+                <p>Each standard session includes:</p>
+                <ul>
+                  <li>45 min of group workout</li>
+                  <li>1 post workput recovery drink</li>
                 </ul>
               </div>
-              <div class="overflow-hidden">
-                <div data-zanim-xs='{"delay":0.5}'><a class="btn btn-link ps-md-0 text-black fw-black" href="#!">learn more<span class="d-inline-block">&xrarr;</span></a></div>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 col-lg-4 ps-lg-6 mt-6 mt-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll"><img class="mb-3" src="../assets/img/icons/package3.svg" alt="" width="120" height="120" />
-              <div class="overflow-hidden">
-                <h2 data-zanim-xs='{"delay":0.1}'>enterprise</h2>
-              </div>
-              <div class="overflow-hidden">
-                <h4 class="font-base fw-light fst-italic mb-0 text-600" data-zanim-xs='{"delay":0.2}'>additional</h4>
-              </div>
-              <div class="overflow-hidden">
-                <h4 class="mb-4" data-zanim-xs='{"delay":0.3}'>$199 per year</h4>
-              </div>
-              <div class="overflow-hidden">
-                <p data-zanim-xs='{"delay":0.4}'>Improve performance with enterprise-level features for high-volume senders like multivariate testing and much more features.</p>
-              </div>
-              <div class="overflow-hidden">
-                <div data-zanim-xs='{"delay":0.5}'><a class="btn btn-link ps-md-0 text-black fw-black" href="#!">contact sales<span class="d-inline-block">&xrarr;</span></a></div>
-              </div>
             </div>
           </div>
-        </div>
-      -->
+          
         <!-- end of .container-->
 
       </section>
@@ -681,7 +528,7 @@ S
             <div class="col-lg-7 text-lg-start ps-lg-5">
               <h3 class="mb-0 text-white">Start Your Journey with Revvo</h3>
             </div>
-            <div class="col-lg-auto pe-lg-5 mt-4 mt-lg-0"><a class="btn btn-light" href="#!">Contact us</a></div>
+            <div class="col-lg-auto pe-lg-5 mt-4 mt-lg-0"><a class="btn btn-light" href="../pages/contact.html">Contact Us</a></div>
           </div>
         </div>
         <!-- end of .container-->
@@ -695,140 +542,20 @@ S
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="text-center" id="defaultMembers">
+      
+        <!--<section class="text-center" id="defaultMembers">
 
         <div class="container">
           <div class="row flex-center">
             <div class="col-lg-7 col-xl-6">
               <h2 class="fs-3 fs-sm-4 text-decoration-underline mb-3">Latest Happenings / Events</h2>
-              <!--<p class="text-500 fst-italic">A passionate group of experienced designers, developers and programmers motivated to continually reach goals and tackle new challenges</p>-->
-            </div>
-            <!--
-            <div class="w-100"></div>
-            <div class="col-lg-6 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0}' data-zanim-trigger="scroll">
-              <div class="hoverbox"><img class="rounded img-fluid" src="../assets/img/team/9.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-                <div class="hoverbox-content p-3 d-flex align-items-end justify-content-end"><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-twitter"></span></a>
-                </div>
-              </div>
-              <div class="overflow-hidden"><a href="../pages/profile.html">
-                  <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Elizabeth Swan</h5>
-                </a></div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Lady</h6>
-              </div>
-            </div>
-            <div class="col-lg-6 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
-              <div class="hoverbox"><img class="rounded img-fluid" src="../assets/img/team/0.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-                <div class="hoverbox-content p-3 d-flex align-items-end justify-content-end"><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-twitter"></span></a>
-                </div>
-              </div>
-              <div class="overflow-hidden"><a href="../pages/profile.html">
-                  <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Jack Sparrow</h5>
-                </a></div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Man</h6>
-              </div>
-            </div>
-          
-            <div class="w-100"></div>
-            <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.2}' data-zanim-trigger="scroll">
-              <div class="hoverbox"><img class="rounded img-fluid" src="../assets/img/team/1.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-                <div class="hoverbox-content p-3 d-flex align-items-end justify-content-end"><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-twitter"></span></a><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-facebook"></span></a>
-                </div>
-              </div>
-              <div class="overflow-hidden"><a href="../pages/profile.html">
-                  <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Hector Barbossa</h5>
-                </a></div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Beta</h6>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.3}' data-zanim-trigger="scroll">
-              <div class="hoverbox"><img class="rounded img-fluid" src="../assets/img/team/2.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-                <div class="hoverbox-content p-3 d-flex align-items-end justify-content-end"><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-instagram"></span></a>
-                </div>
-              </div>
-              <div class="overflow-hidden"><a href="../pages/profile.html">
-                  <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Tia Dalma</h5>
-                </a></div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Gama</h6>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.4}' data-zanim-trigger="scroll">
-              <div class="hoverbox"><img class="rounded img-fluid" src="../assets/img/team/3.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-                <div class="hoverbox-content p-3 d-flex align-items-end justify-content-end"><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-linkedin"></span></a>
-                </div>
-              </div>
-              <div class="overflow-hidden"><a href="../pages/profile.html">
-                  <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Angelica Syrena</h5>
-                </a></div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Ohm</h6>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.5}' data-zanim-trigger="scroll">
-              <div class="hoverbox"><img class="rounded img-fluid" src="../assets/img/team/4.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-                <div class="hoverbox-content p-3 d-flex align-items-end justify-content-end"><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-instagram"></span></a>
-                </div>
-              </div>
-              <div class="overflow-hidden"><a href="../pages/profile.html">
-                  <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Joshame Gibbs</h5>
-                </a></div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Pi</h6>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.6}' data-zanim-trigger="scroll">
-              <div class="hoverbox"><img class="rounded img-fluid" src="../assets/img/team/5.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-                <div class="hoverbox-content p-3 d-flex align-items-end justify-content-end"><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-facebook"></span></a>
-                </div>
-              </div>
-              <div class="overflow-hidden"><a href="../pages/profile.html">
-                  <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Carina Smyth</h5>
-                </a></div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Delta</h6>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.7}' data-zanim-trigger="scroll">
-              <div class="hoverbox"><img class="rounded img-fluid" src="../assets/img/team/6.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-                <div class="hoverbox-content p-3 d-flex align-items-end justify-content-end"><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-twitter"></span></a><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-instagram"></span></a>
-                </div>
-              </div>
-              <div class="overflow-hidden"><a href="../pages/profile.html">
-                  <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Black Beard</h5>
-                </a></div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Fi</h6>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.8}' data-zanim-trigger="scroll">
-              <div class="hoverbox"><img class="rounded img-fluid" src="../assets/img/team/7.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-                <div class="hoverbox-content p-3 d-flex align-items-end justify-content-end"><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-twitter"></span></a><a class="text-white" href="#!"><span class="fs-1 ms-2 fab fa-linkedin"></span></a>
-                </div>
-              </div>
-              <div class="overflow-hidden"><a href="../pages/profile.html">
-                  <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Davy Jones</h5>
-                </a></div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Zita</h6>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.9}' data-zanim-trigger="scroll"><img class="rounded img-fluid" src="../assets/img/team/8.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
-              <div class="overflow-hidden">
-                <h5 class="fs-0 fw-bold mt-3 mb-1" data-zanim-xs='{"delay":0.2}'>Pintel &amp; Ragetti</h5>
-              </div>
-              <div class="overflow-hidden">
-                <h6 class="text-700 fw-normal text-uppercase ls" data-zanim-xs='{"delay":0.3}'>Entertainers</h6>
-              </div>
+              <p class="text-500 fst-italic">A passionate group of experienced designers, developers and programmers motivated to continually reach goals and tackle new challenges</p>
             </div>
           </div>
-        </div>
-      -->
+        </div>-->
         <!-- end of .container-->
 
-      </section>
+      <!--</section>-->
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
@@ -837,14 +564,14 @@ S
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="text-center pt-0 pb-4" id="defaultGallery">
+      <!--    <section class="text-center pt-0 pb-4" id="defaultGallery">
 
         <div class="container">
           <div class="row gy-4" id="home-gallery">
             <div class="col-12 mb-3 mb-lg-5">
               <h2 class="fs-3 fs-sm-4"><span class="text-decoration-underline">Articles</span></h2>
             </div>
-            <!--
+          
             <div class="col-6 col-lg-4"><a href="#!" data-bp="../assets/img/gallery/13-f.jpg" data-bigpicture='{"gallery":"#home-gallery"}' data-caption="your caption"><img class="rounded img-fluid" src="../assets/img/gallery/13.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' data-zanim-trigger="scroll" /></a>
             </div>
             <div class="col-6 col-lg-4"><a href="#!" data-bp="../assets/img/gallery/14-f.jpg" data-bigpicture='{"gallery":"#home-gallery"}' data-caption="your caption"><img class="rounded img-fluid" src="../assets/img/gallery/14.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' data-zanim-trigger="scroll" /></a>
@@ -863,35 +590,16 @@ S
             </div>
             <div class="col-6 col-lg-4"><a href="#!" data-bp="../assets/img/gallery/21-f.jpg" data-bigpicture='{"gallery":"#home-gallery"}' data-caption="your caption"><img class="rounded img-fluid" src="../assets/img/gallery/21.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' data-zanim-trigger="scroll" /></a>
             </div>
-          </div>-->
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section id="defaultCta4">
-
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-lg-8">
-              <h2>Contact Location</h2>
-              
-              <!--<p>Join the highly talented group of artists, engineers, and imagineers.</p><a class="btn btn-outline-dark rounded-pill mt-4" href="#!">See Openings</a>-->
-            </div>
           </div>
-        </div>
+        </div>-->
         <!-- end of .container-->
 
-      </section>
+      <!--</section>-->
       <!-- <section> close ============================-->
       <!-- ============================================-->
+
+
+
 
 
     </main>
@@ -910,37 +618,14 @@ S
         <div class="row align-items-center">
           <div class="col-lg-4 order-lg-2 position-relative"><a class="indicator indicator-up" href="#top"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.9}'></span><span class="indicator-arrow indicator-arrow-two" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":1.05}'></span></a></div>
           <div class="col-lg-4 text-lg-start mt-4 mt-lg-0">
-            <p class="fs--1 text-uppercase ls fw-bold mb-0">Copyright &copy; 2022 Sparrow&trade; inc.</p>
+            <p class="fs--1 text-uppercase ls fw-bold mb-0">Copyright &copy; 2022 Revvo&trade;</p>
           </div>
-          <div class="col-lg-4 text-lg-end order-lg-2 mt-2 mt-lg-0">
+          <!--<div class="col-lg-4 text-lg-end order-lg-2 mt-2 mt-lg-0">
             <p class="fs--1 text-uppercase ls fw-bold mb-0">Made with<span class="text-danger fas fa-heart mx-1"></span>by <a class="text-600" href="https://themewagon.com/">Themewagon</a></p>
-          </div>
+          </div>-->
         </div>
       </div>
     </footer>
-
-
-    <!--===============================================-->
-    <!--    Modal for language selection-->
-    <!--===============================================-->
-    <!-- Modal-->
-    <div class="overflow-hidden">
-      <div class="modal fade fade-in" id="languageModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xs mx-auto" role="document">
-          <div class="modal-content bg-black">
-            <div class="modal-body text-center p-0">
-              <button class="btn-close text-white position-absolute top-0 end-0 times-icon mt-2 me-2 p-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-              <ul class="list-unstyled my-0 py-4 font-sans-serif">
-                <li><a class="text-white fw-bold pt-1 d-block" href="../homes/default.html">English</a></li>
-                <li><a class="pt-1 d-block text-500" href="#!">Français</a></li>
-                <li><a class="text-500 pt-1 d-block" href="../pages/rtl.html">عربى</a></li>
-                <li><a class="pt-1 d-block text-500" href="#!">Deutsche</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
     <!-- ===============================================-->
